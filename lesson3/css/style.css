@@ -1,0 +1,26 @@
+p {
+    color: rgb(26, 24, 24);
+}
+
+a {
+    color: rgb(238, 71, 11);
+}
+
+span {
+    color: green;
+}
+
+.chapters p {
+    color: violet;
+}
+
+h4 {
+    color: darkmagenta;
+}
+
+.first h5,
+.second h5,
+.third h5,
+.fourth h5 {
+    color: crimson;
+}
