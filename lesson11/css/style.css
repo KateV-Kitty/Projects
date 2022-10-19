@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    font-family: 'Comic Neue', sans-serif;
+    line-height: 1.6;
+    color: #424551;
+    height: 2000px;
+    background-color: rgb(185, 174, 174);
+}
+
+.wrapper {}
+
+[class*="__container"] {
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*------header---------------*/
+
+.header {
+    background-color: rgb(172, 116, 116);
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.header__container {}
+
+.header__title {}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(255, 237, 211);
+}
+
+/*------main----------------*/
+.page {
+    padding-top: 150px;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+
+.page__container {
+    border: 2px dotted #424551;
+    padding: 25px;
+    position: relative;
+}
+
+.page__items {}
+
+.items {
+    max-width: 300px;
+}
+
+[class*="items__item"]:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+[class*="items__item"] {
+    padding: 10px;
+    border: 2px dotted #424551;
+}
+
+[class*="items-box"] {
+    border: 1px solid #fff;
+    background-color: rgb(228, 250, 131);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.items__item1 {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.items-box1 {}
+
+.items__item2 {
+    position: relative;
+}
+
+.items-box2 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.items__item3 {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 10;
+}
+
+.items-box3 {}
+
+.items__item4 {
+    position: relative;
+}
+
+.items-box4 {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.items__item5 {}
+
+.items-box5 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+}
+
+/*---footer---------------*/
+
+.footer {}
+
+.footer__container {}
+
+.footer__content {
+    position: relative;
+    max-width: 700px;
+    min-height: 800px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer__box-left {}
+
+.footer__box-left,
+.footer__box-right {
+    background-color: #d6e1ee;
+    box-shadow: inset 5px 5px 15px 5px #fff;
+    border-radius: 10px;
+}
+
+.box-left {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+}
+
+.box-left__text {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.box-left__text::after {
+    content: '';
+    display: inline-block;
+    background: url("../img/footer/line.png") 0 0/cover no-repeat;
+    width: 30px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.box-left__answer {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.box-left__answer::after {
+    content: '';
+    display: inline-block;
+    background: url("../img/footer/line2.png") 0 0/cover no-repeat;
+    width: 20px;
+    height: 30px;
+    margin-left: 40px;
+    z-index: 5;
+}
+
+.box-left__background {
+    position: absolute;
+    top: 200px;
+    background: url('../img/footer/whale.png') -200px -30px /250% no-repeat;
+    width: 300px;
+    height: 100px;
+}
+
+.box-left__crocodail {
+    position: relative;
+    top: 75px;
+    left: 100px;
+}
+
+.box-left__broom {
+    position: relative;
+    left: 30px;
+    top: 2px;
+}
+
+.footer__box-right {
+    position: relative;
+}
+
+.box-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: 40px 40px 20px 20px;
+}
+
+.box-right__text {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.box-right__text::after {
+    content: '';
+    display: inline-block;
+    background: url("../img/footer/line.png") 0 0/cover no-repeat;
+    width: 25px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.box-right__answer {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.box-right__answer::after {
+    content: '';
+    display: inline-block;
+    background: url("../img/footer/line2.png") 0 0/cover no-repeat;
+    width: 30px;
+    height: 40px;
+    margin-left: 60px;
+}
+
+.box-right__background {
+    position: absolute;
+    top: 200px;
+    background: url('../img/footer/whale.png') -200px -30px /250% no-repeat;
+    width: 300px;
+    height: 100px;
+
+}
+
+.box-right__crocodail {
+    position: relative;
+    top: 75px;
+    left: 20px;
+}
+
+.box-right__broom {
+    position: relative;
+    left: 175px;
+
+}
+
+.footer__box-bottom {
+    box-shadow: inset 5px 5px 15px 5px #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-bottom {
+    background-color: #CAD2DF;
+    position: absolute;
+    top: 365px;
+    left: 0;
+    width: 620px;
+    height: 400px;
+    margin-left: 40px;
+}
+
+.box-bottom__text {
+    max-width: 90px;
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+    text-align: center;
+}
+
+.box-bottom__text::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/footer/line3.png") 0 0/cover no-repeat;
+    width: 40px;
+    height: 55px;
+    margin-left: 80px;
+    z-index: 5;
+}
+
+.box-bottom__crocodail {
+    position: absolute;
+    top: 87px;
+    left: 280px;
+    z-index: 2;
+}
+
+.box-bottom__crocodail img {
+    width: 50px;
+    height: 50px;
+}
+
+.box-bottom__broom {
+    position: absolute;
+    top: 119px;
+    left: 312px;
+    z-index: 2;
+}
+
+.box-bottom__broom img {
+    width: 20px;
+    height: 20px;
+}
+
+.box-bottom__whale {
+    position: relative;
+    top: 80px;
+    left: 40px;
+    background: url('../img/footer/whale.png') 0 0/ contain no-repeat;
+    width: 520px;
+    height: 300px;
+}
