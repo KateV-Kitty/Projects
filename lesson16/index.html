@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>lesson 16 </title>
+</head>
+
+<body>
+    <!-- комментарии ctrl+/ -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__title">Experiments</div>
+                <form class="form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+                    <div class="header__form form">
+                        <div class="form__line">
+                            <label class="form__label" for="name">Write your name</label>
+                            <input id="name" class="form__input" type="text" name="name" required autocomplete="off"
+                                placeholder="Write your name">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="email" name="mail" required autocomplete="off"
+                                placeholder="Write your E-mail">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="hidden" name="secret" value="it's a secret">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="tel" name="phone" required autocomplete="off"
+                                placeholder="Write your phone number">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="password" name="pass" required autocomplete="off"
+                                placeholder="Write your password">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="number" name="lol" required autocomplete="off"
+                                placeholder="Write your number">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="color" name="color" value="#FFCF2D" autocomplete="off">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="search" name="search" autocomplete="off"
+                                placeholder="Write your search query">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="date" name="date" autocomplete="off">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="range" name="range" autocomplete="off">
+                        </div>
+                        <div class="form__line">
+                            <div class="form__checkbox checkbox">
+                                <input id="winter" class="checkbox__input" type="checkbox" name="winter">
+                                <label class="checkbox__label" for="winter"><span class="checkbox__text">Do you like
+                                        winter?</span></label>
+                            </div>
+                        </div>
+                        <div class="form__line">
+                            <div class="form__title">What do you like more</div>
+                            <div class="form__radio">
+                                <input class="form__input form__input-radio" id="weather1" type="radio" name="weather"
+                                    value="winter">
+                                <label class="form__label" for="weather1">winret</label>
+                            </div>
+                            <div class="form__radio">
+                                <input checked class="form__input form__input-radio" id="weather2" type="radio"
+                                    name="weather" value="summer">
+                                <label class="form__label" for="weather2">summer</label>
+                            </div>
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" type="file" name="file" multiple accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__line">
+                            <textarea class="form__area" name="massage" autocomplete="off"></textarea>
+                        </div>
+                        <div class="form__line">
+                            <button type="submit" class="form__button">Done</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__questions questions">
+                <div class="questions__container">
+                    <div class="questions__left">
+                        <div class="questions__image">
+                            <img src="img/illustration.svg" alt="">
+                        </div>
+                    </div>
+                    <form class="form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+                        <div class="questions__right right">
+                            <div class="right__block block">
+                                <div class="block__title">Any questions?</div>
+                                <div class="block__sub-title">Drop us a line</div>
+                            </div>
+                            <div class="right__text-fields text-fields">
+                                <div class="text-fields__form-left">
+                                    <label class="text-fields__label" for="first-name">First name*</label>
+                                    <input id="first-name" class="text-fields__input" type="text" name="firstname"
+                                        required autocomplete="off" placeholder="Your first name">
+                                </div>
+                                <div class="text-fields__form-right">
+                                    <label class="text-fields__label" for="last-name">Last name*</label>
+                                    <input id="last-name" class="text-fields__input" type="text" name="lastname"
+                                        required autocomplete="off" placeholder="Your last name">
+                                </div>
+                                <div class="text-fields__form-left">
+                                    <label class="text-fields__label" for="Email">Email*</label>
+                                    <input id="Email" class="text-fields__input" type="email" name="mail" required
+                                        autocomplete="off" placeholder="Your working email">
+                                </div>
+                                <div class="text-fields__form-right">
+                                    <label class="text-fields__label" for="Phone">Phone</label>
+                                    <input id="Phone" class="text-fields__input" type="tel" name="phone" required
+                                        autocomplete="off" placeholder="Your phone number">
+                                </div>
+                                <div class="text-fields__line-area">
+                                    <label class="text-fields__label" for="Message">Message*</label>
+                                    <textarea id="Message" class="text-fields__area" name="message" autocomplete="off"
+                                        placeholder="Your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="right__botttom">
+                                <div class="right__line">
+                                    <div class="right__checkbox checkbox">
+                                        <input id="agree" class="checkbox__input" type="checkbox" name="agree">
+                                        <label class="checkbox__label" for="agree"><span class="checkbox__text">
+                                                I agree to receive communications from Createx Online
+                                                School</span></label>
+                                    </div>
+                                </div>
+                                <div class="right__button">
+                                    <button type="submit" class="button">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
